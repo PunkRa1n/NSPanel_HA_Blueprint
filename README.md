@@ -3,6 +3,42 @@
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FBlackymas%2FNSPanel_HA_Blueprint%2Fblob%2Fmain%2Fnspanel_blueprint.yaml)
 
+Wirte this in your ESPHome:
+
+```
+substitutions:
+
+###### CHANGE ME ######
+
+  device_name: "nspanel"
+  wifi_ssid: !secret wifi_ssid
+  wifi_password: !secret wifi_password
+  ip: 192.168.10.25
+  gw: 192.168.10.1
+  subnet: 255.255.255.0
+  dns: 192.168.1.1
+  api_password: "58JssskMJ8RHLPt/z+kNsbbbbbZJTltFZBwm2KTfU="
+  ota_password: "bf1f9304deaaaaabd72e49accccc7cd7"
+
+##### CHANGE ME #####
+
+
+
+##### DO NOT CHANGE ANYTHING! #####
+
+  nextion_update_url: "https://raw.githubusercontent.com/Blackymas/NSPanel_HA_Blueprint/main/nspanel.tft"
+packages:
+  ##### download esphome code from Github
+  remote_package:
+    url: https://github.com/PunkRa1n/NSPanel_HA_Blueprint
+    ref: main
+    files: [nspanel_esphome.yaml]
+    refresh: 300s
+
+##### DO NOT CHANGE ANYTHING! #####
+```
+
+
 This project allows you to configure your complete NSPanel via a Blueprint with UI.
 ### *That means you don't have to customize any code or change any lines in the code.*
 
