@@ -26,7 +26,7 @@ substitutions:
 
 ##### DO NOT CHANGE ANYTHING! #####
 
-  nextion_update_url: "https://raw.githubusercontent.com/Blackymas/NSPanel_HA_Blueprint/main/nspanel.tft"
+  nextion_update_url: "https://raw.githubusercontent.com/PunkRa1n/NSPanel_HA_Blueprint/main/nspanel.tft"
 packages:
   ##### download esphome code from Github
   remote_package:
