@@ -1,7 +1,7 @@
 # NSPanel Custom with HA Blueprint
 
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FPunkRa1n%2FNSPanel_HA_Blueprint%2Fblob%2Fmain%2Fnspanel_blueprint.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FPunkRa1n%2FNSPanel_HA_Blueprint_static_ip%2Fblob%2Fmain%2Fnspanel_blueprint.yaml)
 
 Wirte this in your ESPHome:
 
@@ -26,11 +26,11 @@ substitutions:
 
 ##### DO NOT CHANGE ANYTHING! #####
 
-  nextion_update_url: "https://raw.githubusercontent.com/PunkRa1n/NSPanel_HA_Blueprint/main/nspanel.tft"
+  nextion_update_url: "https://raw.githubusercontent.com/PunkRa1n/NSPanel_HA_Blueprint_static_ip/main/nspanel.tft"
 packages:
   ##### download esphome code from Github
   remote_package:
-    url: https://github.com/PunkRa1n/NSPanel_HA_Blueprint
+    url: https://github.com/PunkRa1n/NSPanel_HA_Blueprint_static_ip
     ref: main
     files: [nspanel_esphome.yaml]
     refresh: 300s
